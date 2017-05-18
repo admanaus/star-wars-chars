@@ -5,15 +5,19 @@ import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
+import {CharacterListComponent} from "./charactersList/charList.component";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CharacterListComponent,
+
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+
     MaterialModule
   ],
   providers: [],

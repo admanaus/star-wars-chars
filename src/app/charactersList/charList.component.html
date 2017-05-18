@@ -1,0 +1,14 @@
+<h2>{{title}}</h2>
+<button (click)="toggleShowDetails()">
+  <span *ngIf="showDetails">Hide </span>
+  <span *ngIf="!showDetails">Show </span>
+  Details</button>
+
+<div *ngFor="let character of characters">
+  <span>{{character.name}}</span>
+  <ul *ngIf="showDetails">
+    <li>Height: {{character.height}}</li>
+    <li>Gender: {{character.gender}}</li>
+    <li>Force: {{character.force}}</li>
+  </ul>
+</div>
